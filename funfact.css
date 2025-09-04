@@ -1,0 +1,80 @@
+/* Animasi utama */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Animasi item satu per satu */
+.fade-in-item {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Stagger delay */
+.fade-in-item:nth-child(1) { animation-delay: 0.3s; }
+.fade-in-item:nth-child(2) { animation-delay: 0.5s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.faq-section {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.judul-faq {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.faq-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.faq-section li {
+  background-color: #f1f1f1;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.faq-section {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  text-align: center;
+  border: 2px solid #007BFF; /* Warna biru elegan */
+  border-radius: 12px;
+  background-color: #fdfdfd;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.faq-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.faq-section li {
+  background-color: #f1f1f1;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-left: 4px solid #007BFF;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: transform 0.3s ease;
+}
+
+.faq-section li:hover {
+  transform: scale(1.02);
+}

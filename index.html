@@ -1,13 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <title>Halaman Utama</title>
-    <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <h1>Halo Dunia!</h1>
-        <h2>This is Wildan Afandika</h2>
-        <h3>Real Madrid</h3>
-    </body>
+
+ <link rel="stylesheet" href="website.css">
+ <link rel="stylesheet" href="portofolio.css">
+ <link rel="stylesheet" href="funfact.css">
+ <link rel="stylesheet" href="hubungsaya.css">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Saya</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+    .container {
+      background-color: rgb(236, 224, 224);
+      padding: 33px;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #070707;
+    }
+    p {
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Halo, Saya Wildan Afandika</h1>
+    <p>Saya sedang belajar HTML, CSS, dan C# untuk pengembangan game dan keamanan digital.</p>
+    <p>Saya tertarik dengan dunia scam detection, branding kreatif, dan Real Madrid ⚽.</p>
+    <p>Website ini dibuat sebagai latihan dasar HTML. Terima kasih sudah mampir!</p>
+  </div>
+
+<section id="portofolio" class="portofolio-section fade-in">
+  <h2 class="judul-portofolio"><b>Proyek Saya</b></h2>
+  <div class="proyek-wrapper">
+    <div class="proyek-card fade-in">
+      <h3>Analisis Scam APK</h3>
+      <p>Reverse engineering dan profiling situs penipuan.</p>
+    </div>
+    <div class="proyek-card fade-in">
+      <h3>Game Mini di Unity</h3>
+      <p>Platformer sederhana dengan C# dan tilemap.</p>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="faq-section fade-in">
+  <h2 class="judul-faq"><b>Fun Facts</b></h2>
+  <ul>
+    <li class="fade-in-item">Suka investigasi scam site malam-malam.</li>
+    <li class="fade-in-item">Fans berat Toni Kroos dan Real Madrid.</li>
+  </ul>
+</section>
+
+  <br>
+  <br>
+
+<div class="kontak-container fade-in">
+  <section id="kontak">
+    <h2>Hubungi Saya</h2>
+    <form>
+      <input type="text" placeholder="Nama" required><br><br>
+      <input type="email" placeholder="Email" required><br><br>
+      <textarea placeholder="Pesan..." rows="4" required></textarea><br><br>
+      <button type="submit">Kirim</button>
+    </form>
+  </section>
+</div>
+  
+
+
+
+<nav class="nav-bar">
+  <a href="#tentang" class="nav-link">Tentang Saya</a>
+  <a href="#minat" class="nav-link">Minat</a>
+  <a href="#kontak" class="nav-link">Kontak</a>
+</nav>
+</nav>
+</body>
 </html>
